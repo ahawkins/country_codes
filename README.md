@@ -1,6 +1,6 @@
 # CountryCodes
 
-TODO: Write a gem description
+A library for looking up country codes and other meta data
 
 ## Installation
 
@@ -18,7 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'country_codes'
+
+# Phone number must only be this format: /^\+\d+$/
+
+> CountryCodes.from_phone_number '+3585032139876'
+=> <struct CountryCodes::Entry name="Finland", calling_code=358, code=:fi>
+```
+
+### Updating
+
+All information is stored in `dictionary.yml`. If you see a simple
+problem, please use Github's "Propose File Change" functionality to edit
+the file inline and submit a pull request.
 
 ## Contributing
 
