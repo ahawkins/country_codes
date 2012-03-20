@@ -4,9 +4,9 @@ require File.expand_path('../lib/country_codes/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["adman65"]
   gem.email         = ["me@broadcastingadam.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Lookup country related metadata}
+  gem.summary       = %q{}
+  gem.homepage      = "https://github.com/threadedlabs/country_codes"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
