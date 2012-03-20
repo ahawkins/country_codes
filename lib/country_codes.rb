@@ -16,7 +16,7 @@ module CountryCodes
     end.first
 
     if entry
-      Entry.new(entry['name'], entry['calling_code'], nil)
+      Entry.new(entry['name'], entry['calling_code'], entry['code'])
     else
       nil
     end
